@@ -1,0 +1,326 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(5,5,5,0.5),rgba(5,5,5,0.5)),url(bg.jpg);
+	position: relative;
+}
+.logo{
+	width: 10%;
+	height: 100px;
+	float: left;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+nav{
+	width: 90%;
+	height: 100px;
+	margin-left: 10%;
+	/*border: 1px solid white;*/
+}
+nav ul{
+	float: right;
+
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-top: 30px;
+
+}
+nav ul li a{
+	text-decoration: none;
+	font-size: 40px;
+	color: white;
+	padding: 10px;
+}
+
+nav ul li a::after{
+		content: "";
+		width: 0px;
+		height: 2px;
+		background-color: red;
+		display: block;
+		margin: auto;
+		transition: 2s;
+}
+nav ul li a:hover::after{
+	width: 100%;
+
+}
+.text-box{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	text-align: center;
+	color: white;
+}
+.text-box h1{
+	margin-top: 10px;
+}
+.text-box p{
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 25px;
+}
+.text-box a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	border: 1px solid white;
+	padding: 5px 20px;
+	border-radius: 15%;
+	line-height: 70px;
+	transition: 2s;
+}
+.text-box a:hover{
+	background-color: red;
+}
+.course{
+	width: 100%;
+	height: 550px;
+	text-align: center;
+	/*margin-top: 10px;*/
+	/*border: 1px solid black;*/
+}
+.course h1{
+	margin-top: 10px;
+	font-size: 40px;
+
+}
+.course p{
+	font-size: 20px;
+}
+.row{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 30px;
+	/*border:1px solid black;*/
+	display: flex;
+	justify-content: space-between;
+}
+	.col{
+		flex-basis: 31%;
+		border: 1px solid black;
+		border-radius: 5%;
+		background-color: gray;
+		transition: 2s;
+	}
+	.col:hover{
+		box-shadow: 4px 4px 4px 4px;
+	}
+	.col h3{
+		margin-top: 10px;
+	}
+	.col p{
+		margin-top: 10px;
+		padding: 5px;
+	}
+.campus{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+.campus p{
+	margin-top: 10px;
+	font-size: 20px;
+}
+.campus .row{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+.col1{
+	flex-basis: 31%;
+
+}
+.col1 img{
+	margin-top: 10px;
+	width: 100%;
+	height: 80%;
+	border-radius: 5%;
+}
+.globle{
+	text-align: center;
+	width: 100%;
+	height: auto;
+	/*border: 1px solid black;*/
+}
+.globle h1{
+	font-size: 35px;
+	margin-bottom: 15px;
+
+}
+.globle .pr{
+	display: grid;
+	width: 80%;	
+	margin-left: 10%;
+	grid-template-columns: repeat(3,1fr);
+	grid-column-gap: 20px;
+	padding: 10px;
+}
+.ny img{
+	width: 100%;
+	height: 200px;
+	border-radius: 10%;
+}
+.wl img{
+	width: 100%;
+	height: 200px;
+	border-radius: 10%;
+}
+.cm img{
+	width: 100%;
+	height: 200px;
+	border-radius: 10%;
+}
+.admin{
+	width: 100%;
+	height: 350px;
+	margin-top: 50px;
+	text-align: center;
+}
+.adm{
+	height: inherit;
+	width: 80%;
+	margin-left: 10%;
+	border: 1px solid black;
+	border-radius: 15%;
+	background-image: url(en.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.adm h1{
+	margin-top: 10%;
+	font-size: 40px;
+}
+.adm a{
+	text-decoration: none;
+	border: 1px solid black;
+	border-radius: 10%;
+	font-size: 25px;
+	padding: 10px;
+	line-height: 100px;
+}
+footer{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	background: black;
+	color: white;
+}
+.foot{
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	justify-content: space-around;
+}
+.foot1{
+	flex-basis: 30%;
+	height: inherit;
+	text-align: center;
+
+}
+.foot1 h4{
+	margin-top: 10px;
+}
+.foot1 p{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.foot2{
+	flex-basis: 30%;
+	text-align: center;
+}
+.foot2 a{
+	display: block;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+
+}
+.foot3{
+	flex-basis: 30%;
+	text-align: center;
+	margin-top: 10px;
+}
+address{
+	margin-top: 10px;
+}
+@media(max-width: 480px)
+{
+	.logo{
+		height: 70px;
+		width: 15%;
+	}
+	nav{
+		width: 85%;
+	}
+	nav ul li a{
+		font-size: 20px;
+		padding: 2px;
+	}
+	.text-box{
+		/*border: 1px solid white;*/
+		top: 25%;
+
+	}	
+	.text-box p{
+		font-size: 15px;
+}
+	.course{
+		height: auto;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.col{
+		margin-top: 10px;
+	}
+	.campus{
+		height: auto;
+	}
+	.campus h1{
+		margin-top: 10px;
+	}
+
+	.globle{
+		height: auto;
+
+	}
+	.globle .pr{
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 15px;
+	}
+	.admin{
+		/*border: 1px solid black;*/
+		height: auto;
+	}
+	.adm{
+
+		height: auto;
+	}
+	.adm h1{
+		font-size: 25px;
+	}
+
+	.adm a{
+		font-size: 15px;
+		padding: 3px;
+	}
+	.foot{
+		flex-direction: column;
+	}
+	.foot2{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
