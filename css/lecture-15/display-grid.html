@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.main{
+			display: grid;
+			padding: 10px;
+			grid-template-columns: repeat(3,1fr);
+			grid-column-gap: 10px; 
+			grid-row-gap: 10px
+			/*grid-template-columns: 33.33% 33.33% 33.33%;*/
+
+		}
+		.a{
+			border: 1px solid black;
+			background: red;
+		}
+		.b{
+			border: 1px solid black;
+			background: blue;
+		}
+		.c{
+			border: 1px solid black;
+			background: green;
+		}
+		.d{
+			border: 1px solid black;
+			background: teal;
+		}
+		.e{
+			border: 1px solid black;
+			background: pink;
+		}
+		.f{
+			border: 1px solid black;
+			background: lime;	
+		}
+		/*@media (max-width: 480px)
+		{
+			.main
+			{
+					background: red;
+					font-size: 40px;
+				/*grid-template-rows: repeat(6,1fr);*/
+				/*grid-template-columns: repeat(2,1fr);*/
+			/*}
+		}*/*/
+		@media (max-width: 480px)
+{
+	.a{
+		background:black;
+	}
+}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<div class="a">This is Div 1</div>
+		<div class="b">This is Div 2</div>
+		<div class="c">This is Div 3</div>
+		<div class="d">This is Div 4</div>
+		<div class="e">This is Div 5</div>
+		<div class="f">This is Div 6</div>
+	</div>
+
+
+
+</body>
+</html>
