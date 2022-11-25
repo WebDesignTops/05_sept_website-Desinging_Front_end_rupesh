@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>After Pseudo Element</title>
+	<style type="text/css">
+		h1{
+			position: relative;
+		}
+		h1::after{
+			content: '';
+			width: 10px;
+			height: 5px;
+			display: block;
+			position: absolute;
+			background: blue;
+			left: 0px;
+			transition: 2s;
+		}
+		h1:hover::after{
+			width: 12%;
+		}
+	</style>
+</head>
+<body>
+
+		<h1>Welcome to </h1>
+
+
+</body>
+</html>

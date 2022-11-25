@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation with Rotate</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			/*border: 1px solid black;*/
+			border-radius: 20%;
+			margin-top: 100px;
+			margin-left: 100px;
+			background: red;
+			animation-name: rotate;
+			animation-duration: 1s;
+			animation-direction: normal;
+			animation-iteration-count: infinite;
+		}
+		@keyframes rotate{
+			0%{
+				transform: rotate(0deg);
+				background: red;
+			}
+			10%{
+				transform: rotate(36deg);
+				background: yellow;
+			}
+			20%{
+				transform: rotate(72deg);
+				background: blue;
+			}
+			30%{
+				transform: rotate(108deg);
+				background: lime;
+			}
+			40%{
+				transform: rotate(144deg);
+				background: coral;
+			}
+			50%{
+				transform: rotate(180deg);
+				background: purple;
+			}
+			60%{
+				transform: rotate(216deg);
+				background: skyblue;
+			}
+			70%{
+				transform: rotate(252deg);
+				background: cyan;
+			}
+			80%{
+				transform: rotate(288deg);
+				background: teal;
+			}
+			90%{
+				transform: rotate(324deg);
+				background: white;
+			}
+			100%{
+				transform: rotate(360deg);
+				background: orange;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+
+</body>
+</html>
